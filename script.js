@@ -1,12 +1,34 @@
-function alterar() {
-    document.getElementById("titulo").innerHTML = "Trocou o titulo";
-    document.getElementById("campo").value = "Trocou o campo!";
+/* function alterar(titulo) {
+    document.getElementById("titulo").innerHTML = titulo;
+    document.getElementById("campo").value = titulo;
 }
 
-function somar(x, y) {
-    let total = x + y;
+function somar(x ,y) {
+    let  total = x + y;
 
     document.getElementById("campo").value = total;
-
 }
-var resultado = soma(10, 15);
+
+var resultado = somar(10, 15);
+ */
+/* function alterar(titulo) {
+    document.getElementById("titulo").innerHTML = titulo;
+    document.getElementById("campo").value = titulo;
+}
+
+alterar("Titulo de exemplo"); */
+
+function alterar(titulo) {
+    document.getElementById("titulo").innerHTML = titulo;
+    document.getElementById("campo").value = titulo;
+}
+
+function somar(x ,y) {
+    let  total = x + y;
+
+   return total;
+}
+
+var resultado = somar(10, 15);
+
+console.log(resultado);
