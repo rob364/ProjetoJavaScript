@@ -42,3 +42,24 @@ function pegarAnimal() {
     let animal = document.querySelector('.imagem').getAttribute('data-animal');
     alert("O animal é: "+animal);
 } */
+
+function subirTela() {
+    window.scrollTo({
+        top: 0,
+        /* behavior: 'smooth' */
+    })
+}
+
+function decidirBotaoScroll() {
+    if(window.scrollY === 0) {
+        //ocultar botao
+        document.querySelector('.scrollbutton').style.display = 'none';
+    } else {
+        // mostrar o botao
+        document.querySelector('.scrollbutton').style.display = 'block';
+    }
+}
+
+/* setInterval(decidirBotaoScroll, 1000); */
+window.addEventListener('scroll', decidirBotaoScroll);
+
